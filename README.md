@@ -15,7 +15,7 @@ This archive contains the following:
 1. build CSIDH-511: ```make attackHW511``` for collecting HW and ```make attackKG511``` for KeyGen
 2. start simulation: ```python simulation_CTIDH.py```
 
-## Attack SQALE-511
+## Attack SQALE-2048
 1. build SQALE-2048: ```make attack BITS=2048 STYLE=df``` for collecting HW and ```make attack BITS=2048 STYLE=wd2``` for KeyGen.
 2. start simulation: ```python simulation_SQALE.py```.
 3. build SQALE-2048 with countermeasures: set the global value ```WITH_CM = True```, ```make cm BITS=2048 STYLE=df``` for collecting HW with countermeasures, and restart ```python simulation_SQALE.py```.
