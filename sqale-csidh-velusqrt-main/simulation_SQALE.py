@@ -559,7 +559,7 @@ def attack(withNoise, withCM):
         FACTOR = 3
         print("attacking ell_i = " + str(li) + " with " + str(NUM_OF_ATTEMPTS[li]*FACTOR) + " attempts")
         ret = False
-
+        sys.stdout.flush()
         while(ret != True):
             # print("l_i = " + str(li) + " with " + str(NUM_OF_ATTEMPTS[li]) + " attemps ...")
             sk_minus = [x*-1 for x in sk]
