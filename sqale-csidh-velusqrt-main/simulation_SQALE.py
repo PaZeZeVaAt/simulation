@@ -32,7 +32,7 @@ FACTOR_ARRAY = []
 WITH_CM = False
 
 # plot figures ?
-PLOT = True
+PLOT = False
 
 # number of bits to guess
 N = 221
@@ -431,8 +431,8 @@ def decision_corr(sk, li, hw_plus, hw_minus, withNoise):
     neg_count = 0
     count = 0
 
-    sumPlus = []
-    sumMinus = []
+    sumPlus = 0
+    sumMinus = 0
 
     print("sk[i] = " + str(B[li]))
 
