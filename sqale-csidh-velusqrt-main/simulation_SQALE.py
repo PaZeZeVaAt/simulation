@@ -29,7 +29,7 @@ FACTOR = 1
 FACTOR_ARRAY = []
 
 # using countermeasures ?
-WITH_CM = True
+WITH_CM = False
 
 # plot figures ?
 PLOT = True
