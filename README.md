@@ -9,6 +9,19 @@ This archive contains the following:
 - `high-ctidh-20210523` contains the simulation script `simulation_CTIDH.py` and a slightly modified CSIDH implementation from [here](http://ctidh.isogeny.org/software.html).
 - `sqale-csidh-velusqrt-main` contains the simulation script `simulation_SQALE.py` and a slightly modified SQALE implementation from [here](https://github.com/JJChiDguez/sqale-csidh-velusqrt).
 
+# Practical Evaluation
+
+## Attack CTIDH-511
+1. build CSIDH-511: ```make attackHW511``` for collecting HW and ```make attackKG511``` for KeyGen
+2. start simulation: ```python simulation_CTIDH.py```
+
+## Attack SQALE-511
+1. build SQALE-2048: ```make attack BITS=2048 STYLE=df``` for collecting HW and ```make attack BITS=2048 STYLE=wd2``` for KeyGen.
+2. start simulation: ```python simulation_SQALE.py```.
+3. build SQALE-2048 with countermeasures: set the global value ```WITH_CM = True```, ```make cm BITS=2048 STYLE=df``` for collecting HW with countermeasures, and restart ```python simulation_SQALE.py```.
+
+
+
 # Licenses
 
 Code in this repository that does not indicate otherwise is placed in the public domain.
