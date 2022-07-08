@@ -29,10 +29,10 @@ FACTOR = 1
 FACTOR_ARRAY = []
 
 # using countermeasures ?
-WITH_CM = True
+WITH_CM = False
 
 # plot figures ?
-PLOT = True
+PLOT = False
 
 # number of bits to guess
 N = 221
@@ -431,8 +431,8 @@ def decision_corr(sk, li, hw_plus, hw_minus, withNoise):
     neg_count = 0
     count = 0
 
-    sumPlus = []
-    sumMinus = []
+    sumPlus = 0
+    sumMinus = 0
 
     print("sk[i] = " + str(B[li]))
 
@@ -559,7 +559,7 @@ def attack(withNoise, withCM):
         FACTOR = 3
         print("attacking ell_i = " + str(li) + " with " + str(NUM_OF_ATTEMPTS[li]*FACTOR) + " attempts")
         ret = False
-
+        sys.stdout.flush()
         while(ret != True):
             # print("l_i = " + str(li) + " with " + str(NUM_OF_ATTEMPTS[li]) + " attemps ...")
             sk_minus = [x*-1 for x in sk]
