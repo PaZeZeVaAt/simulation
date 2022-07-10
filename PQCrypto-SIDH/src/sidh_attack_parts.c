@@ -213,31 +213,10 @@ static void getDiffPoint(const f2elm_t A, const point_full_proj_t R, const point
     fp2copy(one, D->Z);
 }
 
-
-
-int bits_test(f2elm_t const a, f2elm_t const b)
+static inline int bits_test(f2elm_t const a, f2elm_t const b)
 {
-        felm_t realA = {0}, imA = {0}, realB = {0}, imB = {0};
-
-        fpcopy(a[0], realA);
-        fpcopy(a[1], imA);
-        fpcopy(b[0], realB);
-        fpcopy(b[1], imB);
-
-        // (realA[1] >> 1) << 1
-        // ((realB[1] << 1) >> 1) << 1
-
-        if( (realA[1] >> 1) << 1 == ((realB[1] << 1) >> 1) << 1 && (imA[1] >> 1) << 1 == ((imB[1] << 1) >> 1) << 1 ){   
-            //if( (realA[2] >> 1) << 1 == ((realB[2] << 1) >> 1) << 1  && (imA[2] >> 1) << 1 == ((imB[2]] << 1) >> 1) << 1){
-                //if( (realA[3] >> 1) << 1 == ((realB[3] << 1) >> 1) << 1 && (imA[3] >> 1) << 1 == ((imB[3]] << 1) >> 1) << 1){
-                    //printf("equal\n");
-                    return 1;
-                //} 
-            //}   
-        }
-
-        //printf("unequal\n");
-        return 0;
+    uint64_t maskL = 0xfffffffffffffffe;
+    return ((a[0][1] & maskL) == ((b[0][1] << 1) >> 1) << 1) && ((a[1][1] & maskL) == (((b[1][1] << 1) >> 1) << 1));
         
 }
 
@@ -683,6 +662,7 @@ int EphemeralSecretAgreement_B_extended_leak(const unsigned char* PrivateKeyB, c
         if (((int)iteration) == (int)row)
         {
             *bitseq = bits_test(A24plus, A24minus);
+
             //printf("bitseq %d\n", bitseq);
         }
 

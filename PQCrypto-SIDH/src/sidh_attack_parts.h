@@ -25,7 +25,7 @@ void toAffine(const f2elm_t A, const point_proj_t P, point_full_proj_t R);
 
 // static void getDiffPoint(const f2elm_t A, const point_full_proj_t R, const point_full_proj_t S, point_proj_t D);
 
-int bits_test(f2elm_t const a, f2elm_t const b);
+static inline int bits_test(f2elm_t const a, f2elm_t const b);
 
 void Backtracking(unsigned char* PublicKeyA, const unsigned char *GuessedKeyB, const unsigned int iteration, const unsigned int swap);
 
