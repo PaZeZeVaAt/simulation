@@ -6,7 +6,7 @@ This repository contains auxiliary material for the paper "Patient Zero & Patien
 
 This archive contains the following:
 
-- `PQCrypto-SIDH` contains the simulation and the modified SIKE implementation from [here](https://github.com/microsoft/PQCrypto-SIDH).
+- `PQCrypto-SIDH` contains the simulation and the modified SIKE implementation from [here](https://github.com/microsoft/PQCrypto-SIDH). Furthermore, it uses an adapted version of the [backtracking](https://github.com/FaultyIsogenies/faulty-isogeny-code/blob/main/sidh_attack.c#L278) code from the [Faulty Isogenies](https://github.com/FaultyIsogenies/faulty-isogeny-code) repository.
 - `high-ctidh-20210523` contains the simulation script `simulation_CTIDH.py` and a slightly modified CTIDH implementation from [here](http://ctidh.isogeny.org/software.html).
 - `sqale-csidh-velusqrt-main` contains the simulation script `simulation_SQALE.py` and a slightly modified SQALE implementation from [here](https://github.com/JJChiDguez/sqale-csidh-velusqrt).
 
