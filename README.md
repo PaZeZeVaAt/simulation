@@ -1,6 +1,6 @@
 # Patient Zero & Patient Six: Zero-Value and Correlation Attacks on CSIDH and SIKE
 
-This repository contains auxiliary material for the paper "Patient Zero & Patient Six: Zero-Value and Correlation Attacks on CSIDH and SIKE".
+This repository contains auxiliary material for the paper ["Patient Zero & Patient Six: Zero-Value and Correlation Attacks on CSIDH and SIKE"](https://eprint.iacr.org/2022/904).
 
 # Overview
 
