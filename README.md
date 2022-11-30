@@ -26,7 +26,7 @@ This archive contains the following:
 1. ```cd sqale-csidh-velusqrt-main```
 2. build SQALE-2048: ```make attack BITS=2048 STYLE=df``` for collecting HW and ```make attack BITS=2048 STYLE=wd2``` for KeyGen.
 3. start simulation: ```python simulation_SQALE.py```.
-4. build SQALE-2048 with countermeasures: set the global value ```WITH_CM = True```, ```make cm BITS=2048 STYLE=df``` for collecting HW with countermeasures, and restart ```python simulation_SQALE.py```.
+4. build SQALE-2048 with countermeasures: set in file ```simulation_SQALE.py``` the global value ```WITH_CM = True```, ```make cm BITS=2048 STYLE=df``` for collecting HW with countermeasures, and restart ```python simulation_SQALE.py```.
 
 
 
