@@ -13,12 +13,14 @@ This archive contains the following:
 # Practical Evaluation
 
 ## Attack SIKEp434, SIKEp503, SIKEp610, SIKEp751
-1. build all SIKE versions: ```make attack``` 
-2. start simulation: e.g. ```./sike434/attack_SIKE``` for attacking SIKEp434
+1. ```cd PQCrypto-SIDH```
+2. build all SIKE versions: ```make attack``` 
+3. start simulation: e.g. ```./sike434/attack_SIKE``` for attacking SIKEp434
 
 ## Attack CTIDH-511
-1. build CSIDH-511: ```make attackHW511``` for collecting HW and ```make attackKG511``` for KeyGen
-2. start simulation: ```python simulation_CTIDH.py```
+1. ```cd high-ctidh-20210523```
+2. build CSIDH-511: ```make attackHW511``` for collecting HW and ```make attackKG511``` for KeyGen
+3. start simulation: ```python simulation_CTIDH.py```
 
 ## Attack SQALE-2048
 1. build SQALE-2048: ```make attack BITS=2048 STYLE=df``` for collecting HW and ```make attack BITS=2048 STYLE=wd2``` for KeyGen.
