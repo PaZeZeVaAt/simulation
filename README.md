@@ -2,6 +2,12 @@
 
 This repository contains auxiliary material for the paper ["Patient Zero & Patient Six: Zero-Value and Correlation Attacks on CSIDH and SIKE"](https://eprint.iacr.org/2022/904) which was accepted to [SAC 2022](https://www.sac2022.ca/).
 
+Authors:
+- [Fabio Campos](https://www.sopmac.org/) `<campos@sopmac.de>` 
+- [Michael Meyer](https://www.uni-regensburg.de/informatics-data-science/qpc/team/dr-michael-meyer/index.html) `<michael@random-oracles.org>`
+- [Krijn Reijnders](https://krijnreijnders.com/) `<krijn@cs.ru.nl>`
+- [Marc Stöttinger](https://www.hs-rm.de/de/hochschule/person`<en/stoettinger-marc) `<marc.stoettinger@hs-rm.de>`
+
 # Overview
 
 This archive contains the following:
